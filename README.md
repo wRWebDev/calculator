@@ -40,7 +40,7 @@ The type of the button also effects the class name of that element, and thereby 
 }
 
 ## Passed back to App.js with:
-onClick={() => this.props.handleClick(button.value, button.type)}
+onClick={() => props.handleClick(button.value, button.type)}
 
 ```
 
