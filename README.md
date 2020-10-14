@@ -90,7 +90,7 @@ If so, it'll replace the 0 with the clicked value, else append the clicked value
 
 Checks to see if multiple operators were clicked. If so, it'll only use the last of them, unless it was a negative sign, '-', in which case it'll use the last two operators.
 
-If the operator was 'CE', it'll point to clearAll(), or '=' points to calculate.
+If the operator was 'CE', it'll point to `clearAll()`, or '=' points to `calculate()`.
 
 #### 5. `clearAll()`
 
