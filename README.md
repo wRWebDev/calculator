@@ -106,3 +106,10 @@ The answer is returned as a `float`.
 
 The use of state.answer allows calculations to be continued after pressing '='.
 
+#### 7. `render()`
+
+This method pulls in the Screen and Buttons components, updating the Screen component on state changes.
+
+-----------------------------------------
+
+Enjoy x
