@@ -67,7 +67,7 @@ Initialising state:
 - currentVal: the number being inputted, default 0: `string`
 - answer: the calculation of state.formula: `number`
 
-#### 2. `handleClick()`
+##### 2. `handleClick()`
 
 Triggered onClick of elements generated in Buttons component.
 
@@ -79,24 +79,24 @@ If type is a number (includes decimal point), passes the value to handleNumber.
 
 If an operator, passes the value to handleOperator.
 
-#### 3. `handleNumber()`
+##### 3. `handleNumber()`
 
 If a decimal point is passed, if state.currentValue doesn't contain a decimal point yet, it'll append one.
 
 If a number, it'll check to see if it's a new number.
 If so, it'll replace the 0 with the clicked value, else append the clicked value to the currently displayed number.
 
-#### 4. `handleOperator()`
+##### 4. `handleOperator()`
 
 Checks to see if multiple operators were clicked. If so, it'll only use the last of them, unless it was a negative sign, '-', in which case it'll use the last two operators.
 
 If the operator was 'CE', it'll point to `clearAll()`, or '=' points to `calculate()`.
 
-#### 5. `clearAll()`
+##### 5. `clearAll()`
 
 Resets state to default values.
 
-#### 6. `calculate()`
+##### 6. `calculate()`
 
 Returns the calculation of `state.currentValue` appended to `state.formula` by means of the `eval()` function. 
 
@@ -106,7 +106,7 @@ The answer is returned as a `float`.
 
 The use of state.answer allows calculations to be continued after pressing '='.
 
-#### 7. `render()`
+##### 7. `render()`
 
 This method pulls in the Screen and Buttons components, updating the Screen component on state changes.
 
