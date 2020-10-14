@@ -71,8 +71,7 @@ export default class App extends Component {
         this.setState({
             formula: '',
             currentVal: '0',
-            lastPress: '',
-            answer: ''
+            answer: 0
         })
     }
 
