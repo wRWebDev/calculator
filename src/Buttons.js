@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 const buttons = [
     {
@@ -89,30 +89,25 @@ const buttons = [
 
 ]
 
-export default class Buttons extends Component {
+export default function Buttons(props){
 
-    constructor(props){
-        super(props)
-    }
-
-    render(){
-        const displayButtons = buttons.map(button => {
-            return (
-                <div
-                    key={button.id}
-                    id={button.id} 
-                    className={`button ${button.type}`}
-                    onClick={() => this.props.handleClick(button.value, button.type)}    
-                >
-                    {button.value}
-                </div>
-            )
-        })
-
+    const displayButtons = buttons.map(button => {
         return (
-            <div id="buttons">
-                {displayButtons}
+            <div
+                key={button.id}
+                id={button.id} 
+                className={`button ${button.type}`}
+                onClick={() => props.handleClick(button.value, button.type)}    
+            >
+                {button.value}
             </div>
         )
-    }
+    })
+
+    return (
+        <div id="buttons">
+            {displayButtons}
+        </div>
+    )
+
 }
