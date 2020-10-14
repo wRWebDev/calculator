@@ -32,9 +32,6 @@ export default class App extends Component {
                     ? {currentVal: prevState.currentVal += value, answer: ''} 
                     : {currentVal: value, answer: ''}
             })
-            setTimeout(()=>{
-                console.log(this.state)
-            },0)
         }
     }
 
@@ -53,9 +50,6 @@ export default class App extends Component {
                     }
                 })
             }
-            setTimeout(()=>{
-                console.log(this.state)
-            },0)
         }
         switch(value){
             case 'CE':
