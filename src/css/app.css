@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Allerta Stencil', sans-serif;
+  background: #112228;
+}
+
+main {
+  width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#calcWrapper {
+  height: 568px;
+  width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 16px;
+  background: #112228;
+}
+
+#screen {
+  background: #19323C;
+  border: 2px solid #fff;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 7px;
+  color: #fff;
+}
+
+#screen #roll {
+  width: 100%;
+  padding: 7px 7px 14px 7px;
+  font-size: 18px;
+  text-align: right;
+  color: #FFC805;
+}
+
+#screen #display {
+  width: 100%;
+  padding: 0 7px 7px 7px;
+  font-size: 54px;
+  text-align: right;
+}
+
+#buttons {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 7px;
+      grid-template-areas: "clear  clear   divide  multiply" "seven  eight   nine    subtract" "four   five    six     add" "one    two     three   equals" "zero   zero    decim   equals";
+}
+
+#buttons .operator {
+  background: #8C5E58;
+}
+
+#buttons .number {
+  background: #F3F7F0;
+  color: #000;
+}
+
+#buttons .button {
+  min-width: 67px;
+  min-height: 67px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+#buttons .button:hover {
+  -webkit-transition: -webkit-transform 75ms ease-in-out;
+  transition: -webkit-transform 75ms ease-in-out;
+  transition: transform 75ms ease-in-out;
+  transition: transform 75ms ease-in-out, -webkit-transform 75ms ease-in-out;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+#buttons #zero {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: zero;
+}
+
+#buttons #one {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: one;
+}
+
+#buttons #two {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: two;
+}
+
+#buttons #three {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: three;
+}
+
+#buttons #four {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: four;
+}
+
+#buttons #five {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: five;
+}
+
+#buttons #six {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: six;
+}
+
+#buttons #seven {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: seven;
+}
+
+#buttons #eight {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: eight;
+}
+
+#buttons #nine {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: nine;
+}
+
+#buttons #decimal {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: decim;
+}
+
+#buttons #add {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: add;
+}
+
+#buttons #subtract {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: subtract;
+}
+
+#buttons #multiply {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: multiply;
+}
+
+#buttons #divide {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: divide;
+}
+
+#buttons #equals {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: equals;
+  background: #A93F55;
+  color: #fff;
+}
+
+#buttons #clear {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: clear;
+  background: #F2545B;
+  color: #fff;
+}
